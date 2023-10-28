@@ -1,0 +1,52 @@
+
+.about {
+    max-width: 874px;
+    padding: 5.6vw;
+    min-height: 80vh;
+
+    &__img-inverter {
+        filter: invert(100%);
+        max-width: 120px;
+        margin-top: 100px;
+        
+        @media (max-width: 768px){
+            max-width: 72px;
+            margin-top: 60px;
+        }
+        
+    }
+    
+    &__img {
+        max-width: 324px;
+        display: flex;
+
+        @media (max-width: 768px) {
+            max-width: 140px;
+            margin-top: 30vw;
+        }
+    }
+
+    a {
+        max-width: 186px;
+        margin: 6px 11px 40px 0;
+        border: none;
+        
+    }
+
+    p{
+        margin: 0 0 40px;
+    }
+
+    &__logo {
+        align-items: center;
+        display: flex;
+        margin-top: 12px;
+        
+            &__img {
+                height: 20px;
+                padding-right: 4px;
+            }
+    }
+
+    
+}

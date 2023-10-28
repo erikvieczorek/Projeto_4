@@ -1,0 +1,44 @@
+@use 'variaveis';
+
+.footer {
+    padding-top: 40px 8px;
+    background-color: variaveis.$corDeFundo;
+    
+
+    &__container {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+
+        @media (max-width: 768px) {
+            padding: 0 18px 0 18px;
+        }
+    }
+
+    &__logo {
+        width: 80px;
+        margin: 0 auto 10px;
+    }
+
+    &__links {
+        &__item {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                padding: 8px 6px;
+                display: block;
+
+                &:hover {
+                    color: variaveis.$corTextoSecundario;
+                }
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+}

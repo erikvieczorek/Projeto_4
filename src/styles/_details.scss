@@ -1,0 +1,41 @@
+@use 'variaveis';
+
+
+.details {
+
+    max-width: 100%;
+    padding: 0 5.6vw;
+    min-height: 80vh;
+
+        &__content {
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr;
+            gap: 120px;
+            
+            @media (max-width: 768px) {
+                display: block;
+
+                ul:nth-child(2) .details__content__item:first-child {
+                    margin-top: 48px;
+                }
+            }
+
+
+            &__item {
+                margin-bottom: 18px;               
+                }
+            
+    }
+
+    h2 {
+        border-bottom: 2px solid rgba(249, 249, 249, 0.2);
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        }
+
+    h3 {
+        padding-bottom: 1.5rem;
+    }
+
+}
+
