@@ -55,12 +55,16 @@ body {
     letter-spacing: 1px;
     border: 1px solid variaveis.$corDeFundoBotaoPrimario;
 
+        &:hover {
+            background: linear-gradient(82deg, lighten(variaveis.$corDeFundoBotaoPrimario, 4%) 19%, lighten(variaveis.$corDeFundoBotaoSecundario, 4%));
+        }
+
     &--dark {
         background: rgba(variaveis.$corDeFundoBotaoDark, 0.8);
         border-color: variaveis.$corTextoSecundario;
 
             &:hover {
-                background-color: variaveis.$corTextoSecundario;
+                background: variaveis.$corTextoSecundario;
                 color: variaveis.$corDeFundo;
             }
     }

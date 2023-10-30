@@ -25,6 +25,7 @@
     &__links {
         &__item {
             display: inline-block;
+            transition: transform 0.3s;
 
             a {
                 text-decoration: none;
@@ -32,7 +33,8 @@
                 display: block;
 
                 &:hover {
-                    color: variaveis.$corTextoSecundario;
+                    color: variaveis.$corTextoPrincipal;
+                    transform: scale(1.05);
                 }
             }
         }
